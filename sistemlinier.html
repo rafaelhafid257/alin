@@ -390,7 +390,6 @@ document.write(`
                 <article class="bd-article">
                   
   <p>Menggambar persamaan bidang dalam ruang 3D</p>
-<p>#Selamat bertugas ya</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -413,6 +412,10 @@ document.write(`
 <li><p>RowScale()</p></li>
 <li><p>RowAdd()</p></li>
 </ul>
+<p>Eliminasi gauss adalah metode untuk operasi nilai-nilai dalam matriks, untuk membuat matriks lebih sederhana lagi. Metode eliminasi gaus dikembangkan dari metode eliminasi, dengan cara menghilangkan atau mengurangi jumlah variabel, untuk mendapatkan nilai variabel bebas. Eliminasi Gauss mengubah persamaan linear menjadi bentuk matriks, kemudian diubah ke bentuk Eselon Baris melalui Operasi Baris Elementer. Setelah itu bentuk matriks diselesaikan dengan substitusi balik.</p>
+<p>Row Swap (Penukaran Baris): Proses yang memungkinkan pertukaran posisi dua baris dalam matriks. Ini penting untuk mengatur baris matriks sehingga elemen utama (pivot) berada pada posisi yang tepat.</p>
+<p>Row Scale (Skala Baris): Langkah yang memungkinkan pengalihan setiap elemen dalam suatu baris matriks dengan suatu faktor skalar. Tujuannya adalah untuk mengubah elemen utama menjadi 1 (pivot).</p>
+<p>Row Add (Penambahan Baris): Operasi yang memungkinkan penambahan dari kelipatan satu baris matriks ke baris lainnya. Fungsinya adalah untuk mengeliminasi elemen di bawah atau di atas pivot.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">RowSwap</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">k</span><span class="p">,</span><span class="n">l</span><span class="p">):</span>
@@ -530,7 +533,8 @@ document.write(`
 <p>berikut penyelesaian dari persamaan diatas</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Menggambar persamaan 3D</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">from</span> <span class="nn">mpl_toolkits.mplot3d</span> <span class="kn">import</span> <span class="n">Axes3D</span>
 
